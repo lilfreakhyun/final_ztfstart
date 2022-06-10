@@ -31,6 +31,17 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/
+  uses-material-design: true
+
+  fonts:
+    - family: a엄마의편지
+      fonts:
+        - asset: assets/font/a엄마의편지B.ttf
+        - asset: assets/font/a엄마의편지L.ttf
+        - asset: assets/font/a엄마의편지M.ttf
+
   plugin:
     platforms:
       android:

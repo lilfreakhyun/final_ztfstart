@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'vision/style.dart';
 import 'vision/digital_ink_recognition.dart';
 import 'vision/face_detection.dart';
 import 'vision/image_labeling.dart';
@@ -17,10 +17,12 @@ class LearningApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
+        primarySwatch: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        primaryTextTheme: TextTheme(headline6: TextStyle(color: Colors.white)),
-      ),
+        primaryTextTheme: TextTheme(headline6: TextStyle(color: Colors.white, fontFamily: 'a엄마의편지',fontSize: 18)),
+
+        ),
+
       home: LearningHome(),
     );
   }
@@ -49,7 +51,7 @@ class _LearningHomeState extends State<LearningHome> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('기-log ML 연동'),
+        title: Text('기-록 ML 모듈'),
       ),
       body: SingleChildScrollView(
         child: Column(
